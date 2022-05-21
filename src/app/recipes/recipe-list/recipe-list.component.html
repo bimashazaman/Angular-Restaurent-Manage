@@ -24,14 +24,21 @@
                 <th>Name</th>
                 <th>Description</th>
                 <th>Image</th>
+                <th>Ingredients</th>
               </tr>
             </thead>
             <tbody>
               <tr *ngFor="let recipe of recipes">
                 <td>{{ recipe.name }}</td>
                 <td>{{ recipe.description }}</td>
+
                 <td>
                   <img [src]="recipe.imagePath" alt="{{ recipe.name }}" width="100" />
+                </td>
+                <td>
+                  ingredients
+                  
+                </td>
               </tr>
             </tbody>
           </table>
